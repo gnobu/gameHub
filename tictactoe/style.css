@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Varela+Round&display=swap');
+
+:root {
+    --color-grey: #bfc2c3;
+    --color-blue: #20d2ee;
+    --color-pink: #ffcccc;
+    --color-cyan: #ccffff;
+    --color-cyan-alpha: rgba(204, 255, 255, 0.5);
+    --color-gb: #669999;
+    --color-gb-alpha: rgba(102, 153, 153, 0.504);
+}
+
+* {
+    font-family: 'Comfortaa', 'Varela Round', sans-serif;
+    font-family: 'Varela Round','Comfortaa', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: var(--color-pink);
+    background-color: var(--color-gb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: ease-in-out .5s;
+}
+
+.o {
+    color: white;
+}
+
+.x {
+    color: black;
+}
+
+h1 {
+    font-size: calc(1rem + 5vmin);
+    font-weight: 900;
+}
+
+p {
+    font-size: calc(1rem + 2vmin);
+}
+
+#gameboard {
+    background: var(--color-grey);
+    display: grid;
+    gap: calc(0.2rem + .5vmin);
+    grid-template-columns: repeat(3, 1fr);
+    border: 0px transparent;
+    border: 0px;
+}
+
+.tile {
+    width: calc(3rem + 10vmin);
+    height: calc(3rem + 10vmin);
+    background: var(--color-gb);
+    border: 0px;
+    font-size: calc(16vmin);
+}
+
+.tile:hover{
+    cursor: pointer;
+    background: var(--color-gb-alpha);
+    transform: scale(1.05);
+}
+
+#reset {
+    border-radius: 1em;
+    padding: .5rem 1rem;
+    font-size: calc(.7rem + 2vmin);
+}
+
+#reset:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+
+}
+
